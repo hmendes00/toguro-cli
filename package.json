@@ -1,0 +1,56 @@
+{
+  "name": "@toguro/cli",
+  "version": "1.0.20",
+  "description": "Toguro cli to create and manage custom apps",
+  "main": "src/cli.js",
+  "bin": {
+    "toguro": "bin/toguro.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ],
+  "keywords": [
+    "toguro",
+    "cli",
+    "manage-apps",
+    "create-app",
+    "toguro",
+    "custom-apps",
+    "app",
+    "manage"
+  ],
+  "author": "Toguro",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^5.0.1",
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "esm": "^3.2.25",
+    "execa": "^5.1.1",
+    "inquirer": "^8.1.2",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "semver": "^7.3.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hmendes00/toguro-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hmendes00/toguro-cli/issues"
+  },
+  "homepage": "https://github.com/hmendes00/toguro-cli#readme"
+}

@@ -1,0 +1,15 @@
+
+@import '@styles/reset.scss';
+@import '@styles/variables.scss';
+
+.toguro-app {
+    width: 82%;
+    height: 100%;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+@import '@pages/main/main.scss';
+@import '@components/example/example.scss';
