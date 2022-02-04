@@ -1,3 +1,0 @@
-[submodule "templates/toguro-app-codebase"]
-	path = templates/toguro-app-codebase
-	url = git@github.com:toguro-elearning/toguro-app-codebase.git
