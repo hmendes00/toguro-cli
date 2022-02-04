@@ -29,13 +29,11 @@ toguro --publish // publish app to Toguro App Marketplace
 toguro --create-client-app // create a client where you can test your app
 ```
 
-## How to can I test and publish Apps in the meantime?
+## How can I test and publish Apps in the meantime?
 
 
 You will have to contact Toguro Support/Admin Team
 
 Our email:
-`support@toguro.ca`
-
-Our website:
-https://toguro.ca
+`hmendes00@gmail.com`
+`geovannylc@gmail.com`
