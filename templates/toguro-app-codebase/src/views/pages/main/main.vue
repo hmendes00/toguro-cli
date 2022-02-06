@@ -7,18 +7,18 @@
 
 <script lang="ts">
   import LangMixin from '@/services/lang-service';
-import { mapGetters } from '@/store';
-import gettersOfApp from '@/store/modules/app/getters';
-import toguroExample from '@/views/components/example/example.vue';
-import { defineComponent } from '@vue/runtime-core';
+  import gettersOfApp from '@/store/modules/app/getters';
+  import toguroExample from '@/views/components/example/example.vue';
+  import { computed, defineComponent } from '@vue/runtime-core';
 
   const ToguroMain = defineComponent({
     components: { toguroExample },
     mixins: [LangMixin],
-    computed: {
-      ...mapGetters({
-        appLoaded: gettersOfApp.appLoaded
-      })
+    setup() {
+      const appLoaded = computed(() => gettersOfApp.appLoaded());
+      return {
+        appLoaded
+      };
     }
   });
 
