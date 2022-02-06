@@ -31,8 +31,14 @@ toguro --create-client-app // create a client where you can test your app
 
 ## How can I test and publish Apps in the meantime?
 
+To test the app you for now you can clone our base client [toguro-fe](https://github.com/hmendes00/toguro-fe)
+You will see all the needed instructions to have it setup.
+It shouldn't take more than 5 minutes to get it up and running, tbh.
 
-You will have to contact Toguro Support/Admin Team
+If you want to develop your own app that supports other apps being installed, you will have to build it yourself.
+Luckily you have toguro-fe with the basic structure already setup for this. You will need to take care of the app marketplace where you can allow others to publish apps to it. Those apps can be added to your main project by applying some simple business logic.
+
+For publishing within our marketplace you will have to contact Toguro Support/Admin Team
 
 Our email:
 `hmendes00@gmail.com`
