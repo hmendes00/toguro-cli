@@ -38,11 +38,12 @@ export default defineConfig({
       declarationDir: resolvePath('dist'),
       exclude: resolvePath('node_modules/**'),
       allowSyntheticDefaultImports: true
-    }),
-    viteExternalsPlugin({
-      vue: 'vue3',
-      '@vueuse/core': 'VueUse'
     })
+    // in case you want to integrate it to an existing application running vue under an alias
+    // viteExternalsPlugin({
+    //   vue: 'vue3',
+    //   '@vueuse/core': 'VueUse'
+    // })
   ],
   resolve: {
     dedupe: ['vue'],
