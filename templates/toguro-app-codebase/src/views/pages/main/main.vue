@@ -15,7 +15,7 @@
     components: { toguroExample },
     mixins: [LangMixin],
     setup() {
-      const appLoaded = computed(() => gettersOfApp.appLoaded());
+      const appLoaded = computed(gettersOfApp.appLoaded);
       return {
         appLoaded
       };

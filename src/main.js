@@ -17,11 +17,21 @@ async function copyTemplateFiles(options) {
  });
 }
 
+async function replaceTemplateNameByNewProjectNameInFile(filePath, templateName) {
+  const fsPromise = fs.promises;
+  // Below statements must be wrapped inside the 'async' function:
+  const data = await fsPromise.readFile(filePath, 'utf8');
+  const result = data.replace(/toguro-app-codebase/g, templateName);
+  await fsPromise.writeFile(filePath, result,'utf8');
+}
+
 async function fixPackageJsonNames(options) {
   try {
     if(!fs.existsSync(`${options.templateDirectory}/_package.json`)) {
       return true;
     }
+
+    await replaceTemplateNameByNewProjectNameInFile(`${options.templateDirectory}/_package.json`, options.template);
     await rename(`${options.templateDirectory}/_package.json`, `${options.templateDirectory}/package.json`);
     return true;
   } catch (error) {

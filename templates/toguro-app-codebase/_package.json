@@ -28,7 +28,7 @@
     "@rollup/plugin-typescript": "^8.2.5",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
-    "@vitejs/plugin-vue": "^1.4.0",
+    "@vitejs/plugin-vue": "^2.1.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-typescript": "^4.5.11",
@@ -45,7 +45,7 @@
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
     "typescript": "~4.2.4",
-    "vite": "^2.5.0",
+    "vite": "^2.7.13",
     "vite-plugin-components": "^0.13.2",
     "vite-plugin-externals": "^0.2.0",
     "vue": "^3.2.2"
