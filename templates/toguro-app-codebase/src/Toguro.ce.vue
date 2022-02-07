@@ -1,14 +1,11 @@
-<script lang="ts">
-  import { defineComponent } from 'vue';
-import appDispatcher, { AppActionTypes } from './store/modules/app/actions';
-import ToguroMain from './views/pages/main/main.vue';
+<script setup lang="ts">
+  import { onMounted } from 'vue';
+  import appDispatcher, { AppActionTypes } from './store/modules/app/actions';
+  import ToguroMain from './views/pages/main/main.vue';
 
-  export default defineComponent({
-    components: { ToguroMain },
-    mounted() {
-      appDispatcher(AppActionTypes.SETUP_APP);
-    }
-  });
+  onMounted(() => {
+    appDispatcher(AppActionTypes.SETUP_APP);
+  })
 </script>
 
 <template>

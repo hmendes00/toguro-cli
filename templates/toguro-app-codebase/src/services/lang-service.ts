@@ -12,10 +12,9 @@ const LangService = {
   }
 };
 
-const LangMixin = {
-  methods: {
-    $t: (label: string) => LangService.get(label)
+export const useLang = () => {
+  const $t = (label: string) => LangService.get(label);
+  return {
+    $t
   }
-};
-
-export default LangMixin;
+}

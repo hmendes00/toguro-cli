@@ -33,6 +33,13 @@ toguro --publish // publish app to Toguro App Marketplace
 toguro --create-client-app // create a client where you can test your app
 ```
 
+## Styling
+When I first designed the architecture, vue custom components was still in "beta" version.
+The only way of adding css to the custom components were by either giving all of them `.ce.vue` file extensions, or by doing as I did here where you import your css in the main app.
+
+As soon as I find/create a way to separate them properly I will be updating the CLI.
+(If you are aware of a better way of doing this already, please let us know by sending an email <3 )
+
 ## How can I test and publish Apps in the meantime?
 
 To test the app you for now you can clone our base client [toguro-fe](https://github.com/hmendes00/toguro-fe)
