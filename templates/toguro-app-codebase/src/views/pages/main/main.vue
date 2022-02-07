@@ -9,7 +9,7 @@
   import LangMixin from '@/services/lang-service';
   import gettersOfApp from '@/store/modules/app/getters';
   import toguroExample from '@/views/components/example/example.vue';
-  import { computed, defineComponent } from '@vue/runtime-core';
+  import { computed, defineComponent } from 'vue';
 
   const ToguroMain = defineComponent({
     components: { toguroExample },
