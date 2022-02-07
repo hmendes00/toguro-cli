@@ -2,6 +2,10 @@
 
 This is the CLI to create Toguro Apps.
 
+## Simplified Architecture
+
+![Architecture](https://i.ibb.co/BBbZPg4/Untitled-Artwork-5.png)
+
 ## Instalation
 
 ```
