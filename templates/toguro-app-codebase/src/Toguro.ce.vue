@@ -5,7 +5,7 @@
 
   onMounted(() => {
     appDispatcher(AppActionTypes.SETUP_APP);
-  })
+  });
 </script>
 
 <template>

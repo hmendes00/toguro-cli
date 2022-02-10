@@ -63,7 +63,10 @@ export default defineConfig({
       '@helpers': resolvePath('./src/helpers'),
 
       // Store
-      '@store': resolvePath('./src/store')
+      '@store': resolvePath('./src/store'),
+
+      // Models
+      '@models': resolvePath('./src/models')
     }
   }
 });

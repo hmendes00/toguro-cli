@@ -1,110 +1,21 @@
-//== Typography
-//
-//## Font, line-height, and color for body text, headings, and more.
-$font-family-bold: 'BreezeSans-Bold';
-$font-family-bold-condensed: 'BreezeSans-Bold-Condensed';
-$font-family-regular: 'BreezeSans-Regular';
-$font-family-regular-condensed: 'BreezeSans-Regular-Condensed';
-$font-family-medium: 'BreezeSans-Medium';
-$font-family-medium-condensed: 'BreezeSans-Medium-Condensed';
-
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-base: $font-family-bold !default;
-$font-size-base: 14px !default;
-$font-size-very-large: ceil(($font-size-base * 4.3)) !default; // ~60px
-$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
-$font-size-small-mobile: ceil(($font-size-base * 0.71)) !default; // ~10px
-$font-size-very-small: ceil(($font-size-base * 0.5)) !default; // ~7px
-
-$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-h5: $font-size-base !default;
-$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
-
-// colors
-$primary-color: #9560dc;
-$secondary-color: #5a3888;
-$star-color: #f4c150;
-$gray-very-light: #e7e7e7;
-$gray-light: #f1efef;
-$white: #fff;
-$input-border-color: #e0e3e5;
-$input-gray: #f5f6fa;
-$disabled: #63686e;
-$background-image: linear-gradient(261deg, $secondary-color 0%, $primary-color 96%);
-$facebook-primary: #3b5998;
-$facebook-secondary: #263c68;
-$google-primary: #f44336;
-$google-secondary: #c53126;
-$error-color: #f44336;
-$twitter-primary: #00aced;
-$twitter-secondary: #0695cb;
-$paypal-primary: #243980;
-$paypal-secondary: #2c9ad6;
-$black: #000;
 $bg-color: #fbfbfb;
-$light-pink: #fdfafb;
+$bg-dark: #424446;
+$bg-darker: #1e1e1e;
 
-$stat-up-icon-color: #00b69b;
-$stat-down-icon-color: #f93c65;
-
-$bluish-gray: #4b4968;
-$payment-input: #ebebeb;
-
-// viewport sizes
 $gap: 32px;
 $tablet: 769px;
 $desktop: 960px+ (2 * $gap);
 $widescreen: 1152px+ (2 * $gap);
 $fullhd: 1344px+ (2 * $gap);
-$purple-light: #d3bbf3;
-$purple-300: #8c5ad0;
-$purple-300-opacity-14: rgba($purple-300, 0.14);
 $dark-gray: #929699;
 
 // shadow
 $box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
-//background color
-$background-color-btn: rgba(255, 255, 255, 0);
-
 // font color
 $font-light: #777777;
+$font-lighter: #d4d4d4;
 $font-dark: #202224;
-
-// Bulma configuration
-$primary: $secondary-color;
-
-// Bulma configuration inputs
-$input-border-color: $input-border-color;
-$input-icon-color: $secondary-color;
-$input-shadow: none;
-$input-focus-border-color: $purple-300;
-$input-focus-box-shadow-size: none;
-$input-radius: 8px;
-
-//== Components
-//
-//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
-$padding-base-vertical: 6px !default;
-$padding-base-horizontal: 12px !default;
-$padding-large-vertical: 10px !default;
-$padding-large-horizontal: 16px !default;
-$padding-small-vertical: 5px !default;
-$padding-small-horizontal: 10px !default;
-$padding-xs-vertical: 1px !default;
-$padding-xs-horizontal: 5px !default;
-$line-height-large: 1.3333333 !default; // extra decimals for Win 8.1 Chrome
-$line-height-small: 1.5 !default;
-$border-radius-base: 4px !default;
-$border-radius-large: 6px !default;
-$border-radius-small: 3px !default;
-$btn-border-radius-base: $border-radius-base !default;
-$btn-border-radius-large: $border-radius-large !default;
-$btn-border-radius-small: $border-radius-small !default;
 
 // default padding btn
 $default-padding-btn: 12px 56px;
