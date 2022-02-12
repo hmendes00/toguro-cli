@@ -1,19 +1,20 @@
 import { User } from '@models/index';
-import axios from 'axios';
+import { createFetch } from '@vueuse/core';
 
-axios.interceptors.request.use(
-  async (config) => {
-    config.baseURL = import.meta.env.VITE_ASSETS_API_URL;
-    config.headers = {
-      Accept: 'application/json',
-      'Content-Type': 'application/x-www-form-urlencoded'
-    };
-    return config;
+const _fetch = createFetch({
+  baseUrl: import.meta.env.VITE_ASSETS_API_URL,
+  options: {
+    async beforeFetch({ options }) {
+      // const myToken = await getMyToken();
+      // options.headers.Authorization = `Bearer ${myToken}`;
+
+      return { options };
+    }
   },
-  (error) => {
-    Promise.reject(error);
+  fetchOptions: {
+    mode: 'cors'
   }
-);
+});
 
 /**
  * Service with basic calls for Toguro User API
@@ -22,11 +23,11 @@ const ToguroUserService = {
   /**
    * Get basic info for user loggedin
    */
-  getLoggedUser: async (): Promise<User> => {
+  getLoggedUser: async (): Promise<User | null> => {
     try {
-      const res = await axios.get(`/api/user/me`);
-      if (res.status === 200) {
-        return res.data as User;
+      const res = await _fetch<User>(`/api/user/me`).get();
+      if (res.statusCode.value === 200) {
+        return res.data.value;
       }
     } catch (error) {
       console.error('Could not get logged user.', error);

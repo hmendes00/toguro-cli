@@ -8,9 +8,7 @@
     "dev": "vite",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "types": "dist/src/main.d.ts",
   "main": "dist/main.umd.js",
   "module": "dist/main.es.js",
@@ -48,22 +46,12 @@
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended",
-      "@vue/typescript"
-    ],
+    "extends": ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/typescript"],
     "parserOptions": {
       "parser": "@typescript-eslint/parser"
     },
     "rules": {}
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "dependencies": {
-    "axios": "^0.21.4"
-  }
+  "browserslist": ["> 1%", "last 2 versions", "not dead"],
+  "dependencies": {}
 }
