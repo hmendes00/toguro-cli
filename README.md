@@ -12,7 +12,6 @@ This is the CLI to create Toguro Apps.
 npm install -g @toguro/cli
 ```
 
-
 ## Basic commands
 
 ```
@@ -34,6 +33,7 @@ toguro --create-client-app // create a client where you can test your app
 ```
 
 ## Styling
+
 When I first designed the architecture, vue custom components was still in "beta" version.
 The only way of adding css to the custom components were by either giving all of them `.ce.vue` file extensions, or by doing as I did here where you import your css in the main app.
 
@@ -49,8 +49,24 @@ It shouldn't take more than 5 minutes to get it up and running, tbh.
 If you want to develop your own app that supports other apps being installed, you will have to build it yourself.
 Luckily you have toguro-fe with the basic structure already setup for this. You will need to take care of the app marketplace where you can allow others to publish apps to it. Those apps can be added to your main project by applying some simple business logic.
 
-For publishing within our marketplace you will have to contact Toguro Support/Admin Team
+## Deploying App to AWS
 
-Our email:
+I added the script to automatically deploy the app using [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
+
+You will find the instructions on how to setup and deploy it inside of `/stack/README.md` in the just created app.
+
+You can also checkout this [REPO](https://github.com/hmendes00/toguro-cli) to learn more about the cli, templates and hopefully contribute to it <3.
+
+If you already have AWS CLI configured and are already using AWS CDK in your aws account, you could pretty much just run
+`cdk deploy --profile=the-profile-you-have` inside `/stack` folder (Don't forget to run `npm install` inside of `STACK` folder before).
+
+At this moment you will need to run `npm run build` manually in the root folder before publishing it.
+
+_NOTE: I don't have strong skills with devops stuff, so if you find things that could be improved in the stack, please open an issue or send me an email <3_
+
+I will be improving the stack to configure automated pipeline in the future (user will be able to choose from CLI what they want to include).
+
+---
+
+Any questions, comments and suggestions you can send an email to
 `hmendes00@gmail.com`
-`geovannylc@gmail.com`

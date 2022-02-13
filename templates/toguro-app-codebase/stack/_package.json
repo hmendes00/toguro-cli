@@ -1,0 +1,27 @@
+{
+  "name": "stack",
+  "version": "0.1.0",
+  "bin": {
+    "stack": "bin/stack.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/node": "10.17.27",
+    "aws-cdk": "2.12.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudfront": "^1.144.0",
+    "@aws-cdk/aws-cloudfront-origins": "^1.144.0",
+    "@aws-cdk/aws-s3": "^1.144.0",
+    "@aws-cdk/aws-s3-deployment": "^1.144.0",
+    "aws-cdk-lib": "2.12.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.16"
+  }
+}

@@ -42,13 +42,26 @@ npm run dev
 
 The project will be served in: `http://localhost:3000/`
 
-Because this project is a web-component, you will need the toguro-fe-project to render it.
-For now you will have to contact Toguro Support/Admin Team to have access to a client stack
+To test the app you for now you can clone our base client [toguro-fe](https://github.com/hmendes00/toguro-fe)
+You will see all the needed instructions to have it setup.
+It shouldn't take more than 5 minutes to get it up and running, tbh.
 
-hmendes00@gmail.com
+## Deploying App to AWS
 
-geovannylc@gmail.com
+I added the script to automatically deploy the app using [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
 
-## How to publish it
+You will find the instructions on how to setup and deploy it inside of `/stack/README.md`.
 
-At the moment you will need to create a build and give the js file to one of the adminstrators of Toguro
+If you already have AWS CLI configured and are already using AWS CDK in your aws account, you could pretty much just run
+`cdk deploy --profile=the-profile-you-have` inside `/stack` folder (Don't forget to run `npm install` inside of `STACK` folder before).
+
+At this moment you will need to run `npm run build` manually in the root folder before publishing it.
+
+_NOTE: I don't have strong skills with devops stuff, so if you find things that could be improved in the stack, please open an issue or send me an email <3_
+
+I will be improving the stack to configure automated pipeline in the future (user will be able to choose from CLI what they want to include).
+
+---
+
+Any questions, comments and suggestions you can send an email to
+`hmendes00@gmail.com`
