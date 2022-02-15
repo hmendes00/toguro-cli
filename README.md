@@ -6,6 +6,10 @@ This is the CLI to create Toguro Apps.
 
 ![Architecture](https://i.ibb.co/BBbZPg4/Untitled-Artwork-5.png)
 
+## Example of app
+
+[Assessment App](https://github.com/hmendes00/assessment-app) that supports Javascript and Typescript
+
 ## Instalation
 
 ```
