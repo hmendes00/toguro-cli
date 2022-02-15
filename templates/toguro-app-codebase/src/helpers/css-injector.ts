@@ -1,4 +1,4 @@
-export const InjectCssInShadoRoot = (root: HTMLElement, selectors: string) => {
+export const InjectCssInShadowRoot = (root: HTMLElement, selectors: string) => {
   const styleSheets = document.querySelectorAll(selectors);
   let innerHTML = '';
   for (let i = 0; i < styleSheets.length; i++) {

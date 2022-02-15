@@ -1,6 +1,6 @@
 {
   "name": "@toguro/cli",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "description": "Toguro cli to create and manage custom apps",
   "main": "src/cli.js",
   "bin": {
