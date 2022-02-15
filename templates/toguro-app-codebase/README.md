@@ -2,6 +2,10 @@
 
 This project contains the codebase to create new apps to Toguro and integrate to Toguro App Store.
 
+## Example of app
+
+[Assessment App](https://github.com/hmendes00/assessment-app) that supports Javascript and Typescript
+
 ## Requirements
 
 - Node 16 (we have .nvmrc if you just want to run nvm use)
