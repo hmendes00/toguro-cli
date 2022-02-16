@@ -46,7 +46,9 @@ As soon as I find/create a way to separate them properly I will be updating the 
 
 ## How can I test and publish Apps in the meantime?
 
-To test the app you for now you can clone our base client [toguro-fe](https://github.com/hmendes00/toguro-fe)
+The project will be served in: `http://localhost:3000/`
+You can access it directly to test the custom-app directly or you can clone our base client [toguro-fe](https://github.com/hmendes00/toguro-fe) to test it being added in another structure.
+
 You will see all the needed instructions to have it setup.
 It shouldn't take more than 5 minutes to get it up and running, tbh.
 
@@ -55,7 +57,7 @@ Luckily you have toguro-fe with the basic structure already setup for this. You 
 
 ## Deploying App to AWS
 
-I added the script to automatically deploy the app using [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
+The created project is using [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html) to deploy/write the infrastructure
 
 You will find the instructions on how to setup and deploy it inside of `/stack/README.md` in the just created app.
 

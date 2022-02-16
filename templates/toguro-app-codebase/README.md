@@ -41,14 +41,14 @@ npm run dev
 ## How to test
 
 The project will be served in: `http://localhost:3000/`
+You can access it directly to test the custom-app directly or you can clone our base client [toguro-fe](https://github.com/hmendes00/toguro-fe) to test it being added in another structure.
 
-To test the app you for now you can clone our base client [toguro-fe](https://github.com/hmendes00/toguro-fe)
 You will see all the needed instructions to have it setup.
 It shouldn't take more than 5 minutes to get it up and running, tbh.
 
 ## Deploying App to AWS
 
-I added the script to automatically deploy the app using [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
+this project is using [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html) to deploy/write the infrastructure
 
 You will find the instructions on how to setup and deploy it inside of `/stack/README.md`.
 
