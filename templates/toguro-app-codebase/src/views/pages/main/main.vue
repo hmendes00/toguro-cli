@@ -7,9 +7,17 @@
 
 <script setup lang="ts">
   import gettersOfApp from '@/store/modules/app/getters';
-  import { computed } from 'vue';
+  import { computed, onMounted, ref } from 'vue';
   import toguroExample from '@/views/components/example/example.vue';
   import { useLang } from '@/services/lang-service';
+  import { InjectCssInShadowRootFromString } from '@/helpers/css-injector';
+  import thisCss from './main.scss';
+
+  const root = ref<HTMLDivElement>();
   const { $t } = useLang();
   const appLoaded = computed(gettersOfApp.appLoaded);
+
+  onMounted(() => {
+    InjectCssInShadowRootFromString(root.value!, thisCss);
+  });
 </script>

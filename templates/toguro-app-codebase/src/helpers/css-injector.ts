@@ -9,3 +9,10 @@ export const InjectCssInShadowRoot = (root: HTMLElement, selectors: string) => {
   styleElement.innerHTML = innerHTML;
   shadowRoot.appendChild(styleElement);
 };
+
+export const InjectCssInShadowRootFromString = (root: HTMLElement, css: string) => {
+  const shadowRoot = root.getRootNode();
+  const styleElement = document.createElement('style');
+  styleElement.innerHTML = css;
+  shadowRoot.appendChild(styleElement);
+};
