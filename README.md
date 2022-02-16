@@ -38,11 +38,20 @@ toguro --create-client-app // create a client where you can test your app
 
 ## Styling
 
-When I first designed the architecture, vue custom components was still in "beta" version.
-The only way of adding css to the custom components were by either giving all of them `.ce.vue` file extensions, or by doing as I did here where you import your css in the main app.
+As per [Vue Documentation](https://vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue) around custom elements, you can't really add a style tag inside the component without making it a custom element itself (meaning having it with `.ce.vue` extension). As far as I understood, after trying out a few things, you'd need to register each element separately with those extensions, or add the style inline`
 
-As soon as I find/create a way to separate them properly I will be updating the CLI.
-(If you are aware of a better way of doing this already, please let us know by sending an email <3 )
+The best structure I could come up with to allow `code splitting` and work with `shadow root`, was by injecting the css file in the component itself. (The default is using `scss`, but if you want to use something different you can play with the file `globals.d.ts` adding a declaration for your styling loader).
+
+Here's how to inject it:
+
+```
+import { InjectCssInShadowRootFromString } from '@/helpers/css-injector';
+import thisCss from './example.scss';
+
+onMounted(() => {
+  InjectCssInShadowRootFromString(thisCss);
+});
+```
 
 ## How can I test and publish Apps in the meantime?
 

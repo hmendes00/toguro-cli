@@ -18,6 +18,6 @@
   const appLoaded = computed(gettersOfApp.appLoaded);
 
   onMounted(() => {
-    InjectCssInShadowRootFromString(root.value!, thisCss);
+    InjectCssInShadowRootFromString(thisCss);
   });
 </script>

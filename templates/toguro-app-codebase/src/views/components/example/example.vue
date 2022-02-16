@@ -9,6 +9,6 @@
 
   const root = ref<HTMLDivElement>();
   onMounted(() => {
-    InjectCssInShadowRootFromString(root.value!, thisCss);
+    InjectCssInShadowRootFromString(thisCss);
   });
 </script>

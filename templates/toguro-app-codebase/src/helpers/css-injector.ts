@@ -1,3 +1,5 @@
+import { getCurrentInstance } from 'vue';
+
 export const InjectCssInShadowRoot = (root: HTMLElement, selectors: string) => {
   const styleSheets = document.querySelectorAll(selectors);
   let innerHTML = '';
@@ -10,7 +12,11 @@ export const InjectCssInShadowRoot = (root: HTMLElement, selectors: string) => {
   shadowRoot.appendChild(styleElement);
 };
 
-export const InjectCssInShadowRootFromString = (root: HTMLElement, css: string) => {
+export const InjectCssInShadowRootFromString = (css: string) => {
+  const root = getCurrentInstance()?.root.vnode.el;
+  if (!root) {
+    return;
+  }
   const shadowRoot = root.getRootNode();
   const styleElement = document.createElement('style');
   styleElement.innerHTML = css;
