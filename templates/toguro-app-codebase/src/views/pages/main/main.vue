@@ -1,5 +1,5 @@
 <template>
-  <div class="toguro-main">
+  <div ref="root" class="toguro-main">
     <h2 class="text-center">{{ $t('your-app') }} [{{ appLoaded }}]</h2>
     <toguro-example />
   </div>
