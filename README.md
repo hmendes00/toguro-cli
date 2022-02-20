@@ -1,4 +1,4 @@
-(https://img.shields.io/github/commit-activity/m/hmendes00/toguro-cli/master)
+![Commits](https://img.shields.io/github/commit-activity/m/hmendes00/toguro-cli/master)
 
 # Toguro CLI
 
