@@ -1,3 +1,5 @@
+(https://img.shields.io/github/commit-activity/m/hmendes00/toguro-cli/master)
+
 # Toguro CLI
 
 This is the CLI to create Toguro Apps.
