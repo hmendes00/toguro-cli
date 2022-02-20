@@ -1,3 +1,4 @@
+![License](https://img.shields.io/github/license/hmendes00/toguro-cli)
 ![Commits](https://img.shields.io/github/commit-activity/m/hmendes00/toguro-cli/master)
 
 # Toguro CLI
